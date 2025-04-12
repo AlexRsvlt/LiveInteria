@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LiveInteria: Best Interior Design Solutions for your Home | Get Free Quotes</title>
+    <link rel="stylesheet" href="icons/css/all.css">
+    <link rel="stylesheet" href="common-style.css">
+    <link rel="stylesheet" href="book-style.css">
+    <link rel="shortcut icon" href="source/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <script src="book-code.js"></script>
+    <script src="code.js"></script>
+
+    <div class="banner">
+        <div class="navbar">
+            <img onclick="btn('index.html');" src="source/logo.png" class="logo">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="visit.html">About Us</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="design.html">Ideas</a></li>
+                <li><a href="how.html">How It Works?</a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <h1>LET US GET TO KNOW YOU BETTER!</h1>
+        </div>
+    </div>
+
+    <div class="up" onclick="totop();">
+        <i class="fas fa-angle-up"></i>
+    </div>
+    
+    <div class="m1">
+        <!-- <div class="t1">
+            <h1>Your dream home in 5 simple steps!</h1>
+            <p>Looking to design your home interiors? Here's how you can get started.</p>
+        </div> -->
+        <div class="t1">
+            <p>Ready to elevate your space? Get a free quote today and let our experts bring your vision to life! <br>
+                Fill out the form below and transform your space effortlessly.
+            </p>
+        </div>
+        <br><br><br>
+        <div class="d1">
+            
+
+            <div class="contact-container">
+                <h3>Get your free quote.</h3>
+                <form id="contact-form" action="contact.php" method="POST">
+                    <div class="info" id="step-1">
+                        <input type="text" id="name" name="name" placeholder="Your Name " required>
+                        <span class="error" id="nameError"></span><br>
+                        
+                        <input type="tel" id="phone" name="phone" placeholder="Phone Number " required>
+                        <span class="error" id="phoneError"></span><br>
+                        
+                        <input type="email" id="email" name="email" placeholder="E-mail " required>
+                        <span class="error" id="emailError"></span> <br>
+                        
+                        <button type="button" onclick="nextStep(1)">Next</button>
+                    </div>
+                    
+                    <div class="question-box" id="step-2">
+                        <label>Are you a new or existing customer? </label><br><br>
+                        <input type="radio" name="customer_type" value="new" required> I am a new customer <br>
+                        <input type="radio" name="customer_type" value="existing"> I am an existing customer <br>
+                        <button type="button" onclick="prevStep(2)">Back</button>
+                        <button type="button" onclick="nextStep(2)">Next</button>
+                    </div>
+                    
+                    <div class="question-box" id="step-3">
+                        <label>House or Apartment? </label><br><br>
+                        <input type="radio" name="house_type" value="house" required> House <br>
+                        <input type="radio" name="house_type" value="apartment"> Apartment <br>
+                        <input type="radio" name="house_type" value="other"> Other <br>
+                        <button type="button" onclick="prevStep(3)">Back</button>
+                        <button type="button" onclick="nextStep(3)">Next</button>
+                    </div>
+                    
+                    <div class="question-box" id="step-4">
+                        <label>What type of interior do you prefer? </label><br><br>
+                        <input type="radio" name="interior_type" value="minimalist" required> Minimalist <br>
+                        <input type="radio" name="interior_type" value="scandinavian"> Scandinavian <br>
+                        <input type="radio" name="interior_type" value="bohemian"> Bohemian <br>
+                        <input type="radio" name="interior_type" value="midcentury"> Midcentury Modern <br>
+                        <input type="radio" name="interior_type" value="traditional"> Traditional <br>
+                        <input type="radio" name="interior_type" value="art-deco"> Art Deco <br>
+                        <input type="radio" name="interior_type" value="my-style"> My Style <br>
+                        <button type="button" onclick="prevStep(4)">Back</button>
+                        <button type="button" onclick="nextStep(4)">Next</button>
+                    </div>
+                    
+                    <div class="question-box" id="step-5">
+                        <label>Approximate Sq. Ft. ?</label><br><br>
+                        <input type="radio" name="sqft" value="less-400" required> Less than 400 sq ft <br>
+                        <input type="radio" name="sqft" value="400-700"> 400 - 700 sq ft <br>
+                        <input type="radio" name="sqft" value="700-1000"> 700 - 1000 sq ft <br>
+                        <input type="radio" name="sqft" value="1000-2000"> 1000 - 2000 sq ft <br>
+                        <input type="radio" name="sqft" value="2000+"> More than 2000 sq ft <br>
+                        <button type="button" onclick="prevStep(5)">Back</button>
+                        <button type="button" onclick="nextStep(5)">Next</button>
+                    </div>
+                    
+                    <div class="question-box" id="step-6">
+                        <textarea id="message" name="message" rows="4" placeholder="Questions and comments"></textarea> <br>
+                        <button type="button" class="btn" onclick="prevStep(6)">Back</button>
+                        <button type="submit"><span></span>Send Message</button>
+                    </div>
+                </form>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="m-last">
+        <div class="last">
+            <div>
+                <h1>Your dream home is just a click away</h1>
+                <button onclick="btn('#');">GET STARTED</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="ftr-m">
+            <div class="ftr-t">
+                <img src="source/logo.png">
+                <ul>
+                    <li><a target="_blank" href="https://api.whatsapp.com/send/?phone=+917439999303&text=Hey There! I am interested in interior designs on website. Can I know more on this?"><i class="fab fa-whatsapp"></i></a></li>
+                    <li><a target="_blank" href="https://www.facebook.com/profile.php?id=100061907891820"><i class="fab fa-facebook"></i></a></li>
+                    <li><a target="_blank" href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></li>
+                    <li><a target="_blank" href="https://www.instagram.com/meetpatel_2801/"><i class="fab fa-instagram"></i></i></a></li>
+                </ul>
+            </div>
+            <div class="ftr-d">
+                <div>
+                    <h3>Design ideas</h3>
+                    <ul>
+                        <li><a href="show.html?topic=living-room">Living Rooms</a></li>
+                        <li><a href="show.html?topic=kitchen">Bedrooms</a></li>
+                        <li><a href="show.html?topic=master-bedroom">Kitchens</a></li>
+                        <li><a href="show.html?topic=kids-bedroom">Bathrooms</a></li>
+                    </ul>
+                </div>
+                <!-- <div>
+                    <h3>Locations</h3>
+                    <ul>
+                        <li><a href="https://www.google.com/maps/place/Mumbai" target="_blank">Mumbai</a></li>
+                        <li><a href="https://www.google.com/maps/place/New+Delhi" target="_blank">New Delhi</a></li>
+                        <li><a href="https://www.google.com/maps/place/Kolkata" target="_blank">Kolkata</a></li>
+                        <li><a href="https://www.google.com/maps/place/Bengaluru" target="_blank">Bengaluru</a></li>
+                    </ul>
+                </div> -->
+                <div>
+                    <h3>Explore</h3>
+                    <ul>
+                        <li><a href="book.html">Book A Design</a></li>
+                        <li><a href="visit.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Get in touch</h3>
+                    <ul>
+                        <li>Call us</li>
+                        <a href="tel:7439999303">(+91) 74399 99303</a>
+                        <li>Email us</li>
+                        <a href="mailto:meet2005pokar@gmail.com">liveinteria@gmail.com</a>
+                    </ul>
+                </div>
+            </div>
+            <br><br><br>
+            <div class="ftr-b">
+                <!-- <h2>Designed By Meet</h2> -->
+                <p>© 2024 LiveInteria.com | All Rights Reserved</p>
+            </div>
+            <br><br><br>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,164 @@
+/* .content{
+    top: 30%;
+} */
+.banner{
+    height: 75vh;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(source/book-background.jpg);
+
+}
+
+.content{
+    width: 100%;
+    position: absolute;
+    top: 40%;
+}
+
+.m1{
+    /* width: 100%;
+    height: 475px;
+    text-align: center; */
+    padding: 50px;
+}
+
+.t1{
+    text-align: center;
+}
+.t1 p{
+    font-size: 25px;
+}
+
+.d1{
+    width: 850px;
+    margin: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.contact-container {
+    background: #FCFAEE;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 3px 6px 10px rgba(12, 12, 12, 0.159);
+    width: 500px;
+    text-align: center;
+}
+h3 {
+    color: #632626;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+input, select, textarea {
+    /* width: 100%; */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    margin-bottom: 10px;
+    border-color: #ffd5d5;
+}
+label {
+    font-weight: bold;
+}
+input[type=text], input[type=tel], input[type=email], input[type=radio], textarea {
+    display: inline-block;
+    background: white;
+    color: #632626;
+    opacity: 100%;
+  }
+  input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, input[type=radio]:focus, textarea:focus {
+    color: #632626;
+    outline: none;
+  }
+::placeholder {
+    opacity: 30%;
+}
+/* .btn {
+    background: #DA8359;
+    color: white;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.btn:hover {
+    opacity: 0.9;
+} */
+
+
+.info {
+    /* background: #fff; */
+    padding: 10px;
+    border-radius: 8px;
+    margin: 10px 0;
+    text-align: center;
+    color: #632626;
+}
+.question-box {
+    /* background: #fff; */
+    padding: 10px;
+    border-radius: 8px;
+    margin: 10px 0;
+    text-align: center;
+    display: none;
+    color: #632626;;
+}
+.error {
+    color: red;
+    font-size: 12px;
+    text-align: left;
+}
+
+.question-box button{
+    font-size: 15px;
+    width: 150px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #DA8359;
+    background: transparent;
+    color: #632626;
+    cursor: pointer;
+    position: relative;
+    transition: .5s;
+}
+.question-box button:hover {
+    background-color: #DA8359;
+    color: #FCFAEE;
+}
+.info button{
+    font-size: 15px;
+    width: 150px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #DA8359;
+    background: transparent;
+    color: #632626;
+    cursor: pointer;
+    position: relative;
+    transition: .5s;
+}
+.info button:hover {
+    background-color: #DA8359;
+    color: #FCFAEE;
+}
+
+textarea {
+    width: 97%;
+}
+input[type=text], input[type=tel], input[type=email] {
+    width: 97%;
+}
+
+
